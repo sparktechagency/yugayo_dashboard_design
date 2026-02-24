@@ -79,13 +79,13 @@ const Sidebar = () => {
           </button>
 
           {isSettingsOpen && (
-            <div className="ml-6 mt-0.5">
+            <div className="ml-6 ">
               {settingsItems.map((sub, idx) => (
                 <NavLink
                   key={idx}
                   to={sub.link}
                   className={({ isActive }) =>
-                    `flex items-center px-4 py-2 rounded-xl my-0.5  transition-all duration-150 ${
+                    `flex items-center px-4  py-1.5 rounded-xl my-0.5  transition-all duration-150 ${
                       isActive
                         ? "bg-teal-600 text-white"
                         : "text-gray-600 hover:bg-teal-500/20"
