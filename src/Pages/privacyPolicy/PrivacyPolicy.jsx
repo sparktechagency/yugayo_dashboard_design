@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
   const handleSave = () => toast.success("Privacy policy saved successfully!");
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6 font-poppins">
+    <div className="min-h-screen bg-gray-100 p-6 font-poppins pb-20">
       <div className="mb-5">
         <h1 className="text-xl font-bold text-gray-800">Privacy Policy</h1>
         <p className="text-sm text-gray-400 mt-0.5">Manage and update your platform privacy policy</p>

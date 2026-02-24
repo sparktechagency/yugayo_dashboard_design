@@ -27,7 +27,7 @@ const Password = () => {
     );
 
   return (
-    <Form form={form} layout="vertical" requiredMark={false} className="font-poppins">
+    <Form form={form} layout="vertical" requiredMark={false} className="font-poppins ">
       <div className="mb-1">
         <label className="text-sm text-gray-600 font-medium">Current Password</label>
       </div>

@@ -32,7 +32,7 @@ const AvatarCircle = ({ name, color, size = "w-9 h-9" }) => (
 );
 
 const ConnectionRow = ({ item, isPending, onAccept, onReject }) => (
-  <div className="flex items-center justify-between px-5 py-4 border-b border-gray-50 last:border-0 hover:bg-gray-50 transition-colors">
+  <div className="flex items-center justify-between px-5 py-4 border-b  border-gray-50 last:border-0 hover:bg-gray-50 transition-colors">
     {/* Patient */}
     <div className="flex items-center gap-3 w-40">
       <AvatarCircle name={item.patient} color="#6366f1" />
@@ -106,7 +106,7 @@ const ConnectionsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6 font-poppins">
+    <div className="min-h-screen bg-gray-100 p-6 font-poppins pb-20">
       {/* Search + Tabs */}
       <div className="flex items-center justify-between mb-5 gap-4">
         <Input
