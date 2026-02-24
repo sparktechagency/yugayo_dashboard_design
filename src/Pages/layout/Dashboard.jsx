@@ -4,11 +4,11 @@ import Navbar from "./Shared/Navbar";
 
 const Dashboard = () => {
   return (
-    <div className="p-4 box-border rounded-md flex justify-between items-start overflow-hidden h-screen">
-      <div className="w-[300px] rounded-md overflow-hidden ">
+    <div className="p-4 box-border rounded-md flex justify-between items-start overflow-hidden h-screen bg-gray-100">
+      <div className="w-[320px] rounded-md overflow-hidden ">
         <Sidebar />
       </div>
-      <div className="w-[calc(100vw-350px)] px-3">
+      <div className="w-[calc(100vw-320px)] px-3 ">
         <Navbar />
         <div className="h-[94vh] overflow-y-scroll overflow-hidden">
           <Outlet />

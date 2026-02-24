@@ -11,7 +11,14 @@ import PrivacyPolicy from "../Pages/privacyPolicy/PrivacyPolicy";
 import TermsAndConditions from "../Pages/termsAndConditions/TermsAndConditions";
 import Profile from "../Pages/profile/Profile";
 import ErrorBoundary from "../ErrorBoundary";
-import UserManagement from "../Pages/userManagement/UserManagement";
+import DashboardHome from "../Pages/dashboardHome/DashboardHome";
+import PatientsPage from "../Pages/patients/PatientsPage";
+import PatientDetail from "../Pages/patients/PatientDetail";
+import CliniciansPage from "../Pages/clinician/CliniciansPage";
+import CliniciansDetail from "../Pages/clinician/CliniciansDetail";
+import ConnectionsPage from "../Pages/connections/ConnectionsPage";
+import AnalyticsPage from "../Pages/analytics/AnalyticsPage";
+import AlertsPage from "../Pages/alerts/AlertsPage";
 
 const router = createBrowserRouter([
   {
@@ -25,13 +32,37 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <UserManagement />,
+        element: <DashboardHome />,
       },
       {
-        path: "/users-management",
-        element: <UserManagement />,
+        path: "/patients",
+        element: <PatientsPage />,
       },
-      
+      {
+        path: "/patients/:id",
+        element: <PatientDetail />,
+      },
+      {
+        path: "/clinicians",
+        element: <CliniciansPage />,
+      },
+      {
+        path: "/clinicians/:id",
+        element: <CliniciansDetail />,
+      },
+      {
+        path: "/connections",
+        element: <ConnectionsPage />,
+      },
+      {
+        path: "/alerts",
+        element: <AlertsPage />,
+      },
+      {
+        path: "/analytics",
+        element: <AnalyticsPage />,
+      },
+
       {
         path: "/settings/privacy-policy",
         element: <PrivacyPolicy />,

@@ -84,7 +84,7 @@ const SetNewPassword = () => {
               className="w-full h-[42px] rounded-lg text-sm font-medium"
               style={{ backgroundColor: "#00AAA7", borderColor: "#00AAA7" }}
             >
-              Sign Up
+              Set New Password
             </Button>
           </Form.Item>
         </Form>
